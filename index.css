@@ -3,8 +3,9 @@ img.my-picture {
 }
 
 img.works {
-  width: 500px;
-  height: 250px;
+  width: 350px;
+  height: 175px;
+  margin: 40px;
 }
 
 img.icons {
