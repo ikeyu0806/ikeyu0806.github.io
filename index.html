@@ -1,84 +1,280 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
-
-    <title>ikeyu0806.github.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ikeyu0806.github.io
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="row float-left">
-        <a class="nav-link active" href="#about">About</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#works">Works</a>
-        <a class="nav-link" href="#airticles">Airticles</a>
-        <a class="nav-link" href="#links">Links</a>
+    <nav class="navbar is-light is-fixed-top ">
+      <div class="navbar-brand">
+        <h1 class="navbar-h1">Yikegaya's Portfolio</h1>
       </div>
     </nav>
-
-    <div class="card text-center" id="about">
-        <div class="card-body">
-          <h1>About</h1>
-          <img src="img/my_picture.png" class="rounded-circle my-picture">
-          <h1></h1>
-          <h4>Yuki Ikegaya</h4>
-          &nbsp;
-          <h5>Software engineer</h5>
-        </div>
-      </div>
-
-      <div class="card text-center" id="skills">
-          <div class="card-body">
-            <h1>Skills</h1>
-            <img src="img/icons/ruby.svg" class="icons">
-            <img src="img/icons/java.svg" class="icons">
-            <img src="img/icons/javascript.svg" class="icons">
-            <img src="img/icons/mysql.svg" class="icons">
-            <br>
-            <br>
+  
+    <section class="section section-heading">
+      <div class="text-white">
+        <div class="container">
+          <div class="text-center">
+            <h3 class="section1-title">About Me</h3>
+            <h4 class="section1-subtitle">Yuki Ikegaya</h4>
+            </br>
+            <p>フリーランスのソフトウェアエンジニアです。</p></br>
+            <p>仕事では主にRuby on Rails、React、AWSを使ってWebアプリケーションを開発しています。</p>
+            </br>
+            <p>仕事外ではVueやGolangも使用します。</p>
           </div>
-      </div>
-
-      <div class="card text-center" id="works">
-        <div class="card-body">
-          <h1>Works</h1>
-          &nbsp;
-          <h3>Grizzly</h3>
-          <a href="https://github.com/ikeyu0806/portfolio-grizzly"><img src="img/grizzly.png" class="works"></a>
-          &nbsp;
-          <h4>Markdown compatible article posting web service</h4>
         </div>
       </div>
+    </section>
 
-      <div class="card text-center" id="airticles">
-          <div class="card-body">
-            <h1>Airticles</h1>
-            <a href="https://qiita.com/yuki-ikegaya"><img src="img/icons/qiita.svg" class="icons"></a>
-            <a href="https://ikeyu0806.hatenablog.com/"><img src="img/icons/hatenabookmark.svg" class="icons"></a>
-            <br>
-            <br>
+    <section>
+      <h3 class="title text-center section-header">Links</h3>
+      <div class="columns links">
+        <div class="column is-one-third"></div>
+        <div class="column">
+          <li>Github: <a>https://github.com/ikeyu0806</a></li>
+          <li>はてなブログ: <a>https://ikeyu0806.hatenablog.com/</a></li>
+          <li>Qiita: <a>https://qiita.com/yuki-ikegaya</a></li>
+          <li>Wantedly: <a>https://www.wantedly.com/users/95432660</a></li>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="title section-header text-center">Works</h3>
+
+      <div class="text-center">
+        <h3 class="subtitle work-title"><strong>映画情報取得・レビューサービス:</strong> <a>https://github.com/ikeyu0806/movie-info-frontend</a></h3>
+        <p>TMDBのAPIを使って映画を取得しレビューできるWebサービス。フロントエンドはTypescriptとReact(Next.js)を使用</p>
+        </br>
+        <p>バックエンドは言語はGolang、WebフレームワークはGin、ORマッパーはGormを使用</p>
+        <img src="img/movie_info.png" class="work-image">
+      </div>
+
+      <div class="text-center">
+        <h3 class="subtitle work-title"><strong>マークダウン対応の記事投稿サービス:</strong> <a>https://github.com/ikeyu0806/portfolio-grizzly</a></h3>
+        <p>マークダウンで記事を投稿し他のユーザのフォローして記事を購読できるWebサービス。Ruby on Railsで構築。フロントの一部にVue.jsを使用</p>
+        </br>
+        <p>またansibleを使ったインフラのコード化も対応</p>
+        <img src="img/grizzly.png" class="work-image">
+      </div>
+    </section>
+
+    <section>
+      <h3 class="title section-header text-center">Skills</h3>
+      <div class="columns">
+        <div class="column is-2"></div>
+        <div class="column">
+          <div class="content">
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Ruby on Rails:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="90" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+      
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>React.js:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="80" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+      
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>AWS:</strong>
+                    <br>
+                    <progress class="progress is-primary" value="65" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+      
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Databases</strong>
+                    <br>
+                    <progress class="progress is-primary" value="80" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Java</strong>
+                    <br>
+                    <progress class="progress is-primary" value="30" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Vue.js</strong>
+                    <br>
+                    <progress class="progress is-primary" value="30" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Golang</strong>
+                    <br>
+                    <progress class="progress is-primary" value="30" max="100"></progress>
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
-      </div>
-
-      <div class="card text-center">
-        <div class="card-body" id="links">
-          <h1>Links</h1>
-          <a href="https://www.linkedin.com/in/%E7%A5%90%E8%B2%B4-%E6%B1%A0%E8%B0%B7-61a31661/"><img src="img/icons/linkedin.svg" class="icons"></a>
-          <a href="https://github.com/ikeyu0806"><img src="img/icons/github.svg" class="icons"></a>
-          <a href="https://www.facebook.com/yuuki.ikegaya"><img src="img/icons/facebook.svg" class="icons"></a>
         </div>
+        <div class="column is-2"></div>
       </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <section>
+      <h3 class="title section-header text-center">Qualification</h3>
+      <p class="qualification-description">以下の資格を取得・保持しています。</p>
+      <div class="columns">
+        <div class="column is-2"></div>
+        <div class="column">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>AWS Certified Solutions Architect – Associate</th>
+                <th>AWSにおける分散システムの可用性、コスト効率、高耐障害性およびスケーラビリティの設計を問う資格です。</th>
+              <tr>
+              <tr>
+                <th>基本情報技術者</th>
+                <th>コンピュータサイエンスの基礎知識を中心に出題される主にプログラマ向けの能力認定試験です。</th>
+              </tr>
+              <tr>
+                <th>Oracle Master Java SE8 Silver</th>
+                <th>Javaアプリケーション開発に必要とされる基本的なプログラミング知識を有し、上級者の指導のもとで開発作業を行うことができる開発初心者向け資格です。</th>
+              <tr>
+              <tr>
+                <th>Oracle Master DB 12c Bronze</th>
+                <th>Oracle Enterprise Managerなどを活用し、データベース管理者として必須となる管理者業務を行うための知識があることを証明する資格です。</th>
+              <tr>
+              <tr>
+                <th>LPIC Level1</th>
+                <th>仮想環境を含むLinuxシステムの基本操作とシステム管理が行えるエンジニアとして認定される資格です。</th>
+              </tr>
+                <th>HTML5プロフェッショナル認定試験　レベル１</th>
+                <th>マルチデバイスに対応したWebコンテンツをHTML5を使ってデザイン・制作できることを証明する資格です。</th>
+              </tr>
+              </tr>
+                <th>TOEIC 705</th>
+                <th>英語に関してはスピーキング、リスニングは不得手ですがライティング、リーディングであれば実務でも対応可能です。</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="column is-2"></div>
+      </div>
+    </section>
+
   </body>
+
+  <footer class="footer">
+  </footer>
+
 </html>
+
+<style>
+  .navbar-h1 {
+    margin: 10px;
+  }
+  .section1-title {
+    font-size: 35px;
+  }
+  .section1-subtitle {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+ .section-heading {
+   margin-top: 20px;
+   background-color:gray;
+ }
+ .portfolio-description {
+   margin-top: 10px;
+ }
+ .text-center {
+  text-align:center;
+ }
+ .text-white {
+   color: white;
+ }
+ .top-header {
+   margin-top: 15px;
+ }
+ .separation {
+   margin-top: 20px;
+ }
+ .section-header {
+   margin-top: 50px;
+ }
+ .work-title {
+   margin: 30px;
+ }
+ .work-image {
+   width: 60%;
+   height: 60%;
+   margin-top: 30px;
+ }
+ .qualification-description {
+   margin-bottom: 20px;
+   text-align: center;
+ }
+
+@media screen and (max-width: 480px) {
+  .links {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width:481px) and ( max-width:768px) {
+  .links {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width:769px) and ( max-width:1024px) {
+  .links {
+    margin-left: 300px;
+  }
+}
+</style>
