@@ -8,217 +8,219 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
   <body>
-    <nav class="navbar is-light is-fixed-top ">
-      <div class="navbar-brand">
-        <h1 class="navbar-h1">Yikegaya's Portfolio</h1>
-      </div>
-    </nav>
+    <div id="app">
+      <nav class="navbar is-light is-fixed-top ">
+        <div class="navbar-brand">
+          <h1 class="navbar-h1">Yikegaya's Portfolio</h1>
+        </div>
+      </nav>
+    
+      <section class="section section-heading">
+        <div class="text-white">
+          <div class="container">
+            <div class="text-center">
+              <h3 class="section1-title">About Me</h3>
+              <h4 class="section1-subtitle">Yuki Ikegaya</h4>
+              </br>
+              <p>フリーランスのソフトウェアエンジニアです。</p></br>
+              <p>仕事では主にRuby on Rails、React、AWSを使ってWebアプリケーションを開発しています。</p>
+              </br>
+              <p>仕事外ではVueやGolangも使用します。</p>
+            </div>
+          </div>
+        </div>
+      </section>
   
-    <section class="section section-heading">
-      <div class="text-white">
-        <div class="container">
-          <div class="text-center">
-            <h3 class="section1-title">About Me</h3>
-            <h4 class="section1-subtitle">Yuki Ikegaya</h4>
-            </br>
-            <p>フリーランスのソフトウェアエンジニアです。</p></br>
-            <p>仕事では主にRuby on Rails、React、AWSを使ってWebアプリケーションを開発しています。</p>
-            </br>
-            <p>仕事外ではVueやGolangも使用します。</p>
+      <section>
+        <h3 class="title text-center section-header">Links</h3>
+        <div class="columns links">
+          <div class="column is-one-third"></div>
+          <div class="column">
+            <li>Github: </a><a href="https://github.com/ikeyu0806">https://github.com/ikeyu0806</a></li>
+            <li>はてなブログ: <a href="https://ikeyu0806.hatenablog.com/">https://ikeyu0806.hatenablog.com/</a></li>
+            <li>Qiita: <a href="https://qiita.com/yuki-ikegaya">https://qiita.com/yuki-ikegaya</a></li>
+            <li>Wantedly: <a href="https://www.wantedly.com/users/95432660">https://www.wantedly.com/users/95432660</a></li>
           </div>
+          <div class="column"></div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <h3 class="title text-center section-header">Links</h3>
-      <div class="columns links">
-        <div class="column is-one-third"></div>
-        <div class="column">
-          <li>Github: </a><a href="https://github.com/ikeyu0806">https://github.com/ikeyu0806</a></li>
-          <li>はてなブログ: <a href="https://ikeyu0806.hatenablog.com/">https://ikeyu0806.hatenablog.com/</a></li>
-          <li>Qiita: <a href="https://qiita.com/yuki-ikegaya">https://qiita.com/yuki-ikegaya</a></li>
-          <li>Wantedly: <a href="https://www.wantedly.com/users/95432660">https://www.wantedly.com/users/95432660</a></li>
+      </section>
+  
+      <section>
+        <h3 class="title section-header text-center">Works</h3>
+  
+        <div class="text-center">
+          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/movie-info-frontend">映画情報取得・レビューサービス</a></strong></h3>
+          <p>TMDBのAPIを使って映画情報を取得しレビューできるWebサービス。フロントエンドはTypescriptとReact(Next.js)を使用</p>
+          </br>
+          <p>バックエンドは言語はGolang、WebフレームワークはGin、ORマッパーはGormを使用</p>
+          <img src="img/movie_info.png" class="work-image">
         </div>
-        <div class="column"></div>
-      </div>
-    </section>
-
-    <section>
-      <h3 class="title section-header text-center">Works</h3>
-
-      <div class="text-center">
-        <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/movie-info-frontend">映画情報取得・レビューサービス</a></strong></h3>
-        <p>TMDBのAPIを使って映画情報を取得しレビューできるWebサービス。フロントエンドはTypescriptとReact(Next.js)を使用</p>
-        </br>
-        <p>バックエンドは言語はGolang、WebフレームワークはGin、ORマッパーはGormを使用</p>
-        <img src="img/movie_info.png" class="work-image">
-      </div>
-
-      <div class="text-center">
-        <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/vue-calendar">自作Webカレンダー</a></strong></h3>
-        <p>Vue.js(Nuxt)で作成したカレンダーサービス。</p>
-        </br>
-        <img src="img/vue_calendar.png" class="work-image">
-      </div>
-
-      <div class="text-center">
-        <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/portfolio-grizzly">マークダウン対応の記事投稿サービス</a></strong></h3>
-        <p>マークダウンで記事を投稿し他のユーザをフォローして記事を購読できるWebサービス。Ruby on Railsで構築。フロントの一部にVue.jsを使用</p>
-        </br>
-        <p>またansibleを使ったインフラのコード化も対応しています。</p>
-        <img src="img/grizzly.png" class="work-image">
-      </div>
-    </section>
-
-    <section>
-      <h3 class="title section-header text-center">Skills</h3>
-      <div class="columns">
-        <div class="column is-2"></div>
-        <div class="column">
-          <div class="content">
-
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Ruby on Rails:</strong>
-                    <br>
-                    <progress class="progress is-primary" value="90" max="100"></progress>
-                  </p>
+  
+        <div class="text-center">
+          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/vue-calendar">自作Webカレンダー</a></strong></h3>
+          <p>Vue.js(Nuxt)で作成したカレンダーサービス。表示する月の選択、予定登録機能を実装しています。</p>
+          </br>
+          <p>バックエンドはGolang、APIインターフェイスにはGraphQLを使用</p>
+          <img src="img/vue_calendar.png" class="work-image">
+        </div>
+  
+        <div class="text-center">
+          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/portfolio-grizzly">マークダウン対応の記事投稿サービス</a></strong></h3>
+          <p>マークダウンで記事を投稿し他のユーザをフォローして記事を購読できるWebサービス。Ruby on Railsで構築。フロントの一部にVue.jsを使用</p>
+          </br>
+          <p>またansibleを使ったインフラのコード化も対応しています。</p>
+          <img src="img/grizzly.png" class="work-image">
+        </div>
+      </section>
+  
+      <section>
+        <h3 class="title section-header text-center">Skills</h3>
+        <div class="columns">
+          <div class="column is-2"></div>
+          <div class="column">
+            <div class="content">
+  
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Ruby on Rails:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-      
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>React.js:</strong>
-                    <br>
-                    <progress class="progress is-primary" value="80" max="100"></progress>
-                  </p>
+              </article>
+        
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>React.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="80" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-      
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>AWS:</strong>
-                    <br>
-                    <progress class="progress is-primary" value="65" max="100"></progress>
-                  </p>
+              </article>
+        
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>AWS:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="65" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-      
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Databases</strong>
-                    <br>
-                    <progress class="progress is-primary" value="80" max="100"></progress>
-                  </p>
+              </article>
+        
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="80" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Java</strong>
-                    <br>
-                    <progress class="progress is-primary" value="30" max="100"></progress>
-                  </p>
+              </article>
+  
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Java</strong>
+                      <br>
+                      <progress class="progress is-primary" value="30" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Vue.js</strong>
-                    <br>
-                    <progress class="progress is-primary" value="30" max="100"></progress>
-                  </p>
+              </article>
+  
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Vue.js</strong>
+                      <br>
+                      <progress class="progress is-primary" value="30" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
-
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Golang</strong>
-                    <br>
-                    <progress class="progress is-primary" value="30" max="100"></progress>
-                  </p>
+              </article>
+  
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Golang</strong>
+                      <br>
+                      <progress class="progress is-primary" value="30" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
+          <div class="column is-2"></div>
         </div>
-        <div class="column is-2"></div>
-      </div>
-    </section>
-
-    <section>
-      <h3 class="title section-header text-center">Qualification</h3>
-      <p class="qualification-description">以下の資格を取得・保持しています。</p>
-      <div class="columns">
-        <div class="column is-2"></div>
-        <div class="column">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tfoot>
-              <tr>
-                <th>AWS Certified Solutions Architect – Associate</th>
-                <th>AWSにおける分散システムの可用性、コスト効率、高耐障害性およびスケーラビリティの設計を問う資格です。</th>
-              <tr>
-              <tr>
-                <th>基本情報技術者</th>
-                <th>コンピュータサイエンスの基礎知識を中心に出題される主にプログラマ向けの能力認定試験です。</th>
-              </tr>
-              <tr>
-                <th>Oracle Master Java SE8 Silver</th>
-                <th>Javaアプリケーション開発に必要とされる基本的なプログラミング知識を有し、上級者の指導のもとで開発作業を行うことができる開発初心者向け資格です。</th>
-              <tr>
-              <tr>
-                <th>Oracle Master DB 12c Bronze</th>
-                <th>Oracle Enterprise Managerなどを活用し、データベース管理者として必須となる管理者業務を行うための知識があることを証明する資格です。</th>
-              <tr>
-              <tr>
-                <th>LPIC Level2</th>
-                <th>仮想環境を含むLinuxのシステム設計、ネットワーク構築において、アーキテクチャに基づいた設計、導入、保守、問題解決ができる技術者を認定する資格です。</th>
-              </tr>
-                <th>HTML5プロフェッショナル認定試験　レベル１</th>
-                <th>マルチデバイスに対応したWebコンテンツをHTML5を使ってデザイン・制作できることを証明する資格です。</th>
-              </tr>
-              </tr>
-                <th>TOEIC 705</th>
-                <th>英語に関してはスピーキング、リスニングは不得手ですがライティング、リーディングであれば実務でも対応可能です。</th>
-              </tr>
-            </tfoot>
-          </table>
+      </section>
+  
+      <section>
+        <h3 class="title section-header text-center">Qualification</h3>
+        <p class="qualification-description">以下の資格を取得・保持しています。</p>
+        <div class="columns">
+          <div class="column is-2"></div>
+          <div class="column">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>AWS Certified Solutions Architect – Associate</th>
+                  <th>AWSにおける分散システムの可用性、コスト効率、高耐障害性およびスケーラビリティの設計を問う資格です。</th>
+                <tr>
+                <tr>
+                  <th>基本情報技術者</th>
+                  <th>コンピュータサイエンスの基礎知識を中心に出題される主にプログラマ向けの能力認定試験です。</th>
+                </tr>
+                <tr>
+                  <th>Oracle Master Java SE8 Silver</th>
+                  <th>Javaアプリケーション開発に必要とされる基本的なプログラミング知識を有し、上級者の指導のもとで開発作業を行うことができる開発初心者向け資格です。</th>
+                <tr>
+                <tr>
+                  <th>Oracle Master DB 12c Bronze</th>
+                  <th>Oracle Enterprise Managerなどを活用し、データベース管理者として必須となる管理者業務を行うための知識があることを証明する資格です。</th>
+                <tr>
+                <tr>
+                  <th>LPIC Level2</th>
+                  <th>仮想環境を含むLinuxのシステム設計、ネットワーク構築において、アーキテクチャに基づいた設計、導入、保守、問題解決ができる技術者を認定する資格です。</th>
+                </tr>
+                  <th>HTML5プロフェッショナル認定試験　レベル１</th>
+                  <th>マルチデバイスに対応したWebコンテンツをHTML5を使ってデザイン・制作できることを証明する資格です。</th>
+                </tr>
+                </tr>
+                  <th>TOEIC 705</th>
+                  <th>英語に関してはスピーキング、リスニングは不得手ですがライティング、リーディングであれば実務でも対応可能です。</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="column is-2"></div>
         </div>
-        <div class="column is-2"></div>
-      </div>
-    </section>
-
+      </section>
+      <footer class="footer">
+        <p>@ {{ currentYear }} Yuki Ikegaya</p>
+      </footer>
+    </div>
   </body>
-
-  <footer class="footer">
-  </footer>
 
 </html>
 
@@ -286,3 +288,12 @@
   }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script>
+var app = new Vue({
+  el: "#app",
+  data:{
+    currentYear: new Date().getFullYear()
+  }
+})
+</script>
