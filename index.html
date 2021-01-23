@@ -47,29 +47,84 @@
   
       <section class="margin-15">
         <h3 class="title section-header text-center">Works</h3>
-  
-        <div class="text-center">
-          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/movie-info-frontend">映画情報取得・レビューサービス</a></strong></h3>
-          <p>TMDBのAPIを使って映画情報を取得しレビューできるWebサービス。フロントエンドはTypescriptとReact(Next.js)を使用</p>
-          </br>
-          <p>バックエンドは言語はGolang、WebフレームワークはGin、ORマッパーはGormを使用</p>
-          <img src="img/movie_info.png" class="work-image">
-        </div>
-  
-        <div class="text-center">
-          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/vue-calendar">自作Webカレンダー</a></strong></h3>
-          <p>Vue.js(Nuxt)で作成したカレンダーサービス。表示する月の選択、予定登録機能を実装しています。</p>
-          </br>
-          <p>バックエンドはGolang、APIインターフェイスにはGraphQLを使用</p>
-          <img src="img/vue_calendar.png" class="work-image">
-        </div>
-  
-        <div class="text-center">
-          <h3 class="subtitle work-title"><strong><a href="https://github.com/ikeyu0806/portfolio-grizzly">マークダウン対応の記事投稿サービス</a></strong></h3>
-          <p>マークダウンで記事を投稿し他のユーザをフォローして記事を購読できるWebサービス。Ruby on Railsで構築。フロントの一部にVue.jsを使用</p>
-          </br>
-          <p>またansibleを使ったインフラのコード化も対応しています。</p>
-          <img src="img/grizzly.png" class="work-image">
+        <div class="container portfolio-container">
+          <div class="columns">
+            <div class="column is-4"> 
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>映画情報取得・レビューサービス</span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <small>TMDBのAPIを使って映画情報を取得しレビューできるWebサービス。
+                    </br>フロントエンドはTypescriptとReact(Next.js)、
+                    </br>バックエンドはGolangを使用
+                    </small>
+                    </br>
+                    <img src="img/movie_info.png" alt="movie app screenshot" class="work-image">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ikeyu0806/movie-info-frontend" class="card-footer-item">
+                    Source Code
+                </a>    
+                </footer>
+              </div>
+            </div>
+
+            <div class="column is-4">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Vue.js(Nuxt)で作成した自作カレンダーサービス</span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <small class="work-description">ユーザ登録と予定の登録、編集、削除機能を実装しています。</small>
+                    </br><small class="work-description">フロントエンドはVue(Nuxt.js)、</small>
+                    </br><small class="work-description">バックエンドはGolangを使用</small>
+                    </small>
+                    </br>
+                    <img src="img/vue_calendar.png" alt="calendar app screenshot" class="work-image">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ikeyu0806/vue-calendar" class="card-footer-item">
+                    Source Code
+                </a>    
+                </footer>
+              </div>
+            </div>
+
+            <div class="column is-4">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>マークダウンで記事を投稿し他のユーザをフォローして記事を購読できるWebサービス</span>
+                  </p>
+                </header>
+                <div class="card-content">
+                  <figure class="image">
+                    <small>
+                      マークダウンで記事を投稿し他のユーザをフォローして記事を購読できるWebサービス
+                    </br>Ruby on Railsで構築。フロントの一部にVue.jsを使用
+                    </br>またansibleを使ったインフラのコード化も対応しています。
+                    </small>
+                    </br>
+                    <img src="img/grizzly.png" alt="calendar app screenshot" class="work-image">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/ikeyu0806/grizzly" class="card-footer-item">
+                    Source Code
+                </a>    
+                </footer>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
   
@@ -263,17 +318,15 @@
  .section-header {
    margin-top: 50px;
  }
- .work-title {
-   margin: 30px;
- }
- .work-image {
-   width: 60%;
-   height: 60%;
-   margin-top: 30px;
- }
  .qualification-description {
    margin-bottom: 20px;
    text-align: center;
+ }
+ .work-description {
+   margin: 10px 0px;
+ }
+ .work-image {
+   margin-top: 10px;
  }
 
 @media screen and (max-width: 1024px) {
