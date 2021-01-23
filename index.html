@@ -13,9 +13,45 @@
         <div class="navbar-brand">
           <h1 class="navbar-h1">Yikegaya's Portfolio</h1>
         </div>
+
+        <div class="navbar-end">
+          <div id="navbar-links" class="navbar-menu">
+            <a class="navbar-item" href="#about">
+              <span class="icon">
+                <i class="fas fa-bars"></i>
+              </span>
+              <span>About</span>
+            </a>
+            <a class="navbar-item" href="#links">
+              <span class="icon">
+                <i class="fas fa-bars"></i>
+              </span>
+              <span>Links</span>
+            </a>
+            <a class="navbar-item" href="#portfolio">
+              <span class="icon">
+                <i class="fas fa-th-list"></i>
+              </span>
+              <span>Portfolio</span>
+            </a>
+            <a class="navbar-item" href="#skills">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Skills</span>
+            </a>
+            <a class="navbar-item" href="#qualification">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Qualification</span>
+            </a>
+          </div>
+        </div>
+
       </nav>
     
-      <section class="section section-heading">
+      <section class="section section-heading" id="about">
         <div class="text-white">
           <div class="container">
             <div class="text-center">
@@ -31,7 +67,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="links">
           <div class="container">
             <div class="text-center">
               <h3 class="title text-center section-header">Links</h3>
@@ -43,7 +79,7 @@
         </div>
       </section>
   
-      <section class="margin-15">
+      <section class="margin-15" id="portfolio">
         <h3 class="title section-header text-center">Portfolio</h3>
         <div class="container portfolio-container">
           <div class="columns">
@@ -174,7 +210,7 @@
         </div>
       </section>
   
-      <section class="margin-15">
+      <section class="margin-15" id="skills">
         <h3 class="title section-header text-center">Skills</h3>
         <div class="has-text-centered">
           <p>各スキル習熟度の目安（自己評価）です</p>
@@ -274,7 +310,7 @@
         </div>
       </section>
   
-      <section class="margin-15">
+      <section class="margin-15" id="qualification">
         <h3 class="title section-header text-center">Qualification</h3>
         <p class="qualification-description">以下の資格を取得・保持しています。</p>
         <div class="columns">
@@ -387,6 +423,7 @@
 var app = new Vue({
   el: "#app",
   data:{
+    isNavbarOpen: false,
     currentYear: new Date().getFullYear()
   }
 })
