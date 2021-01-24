@@ -9,13 +9,19 @@
   </head>
   <body>
     <div id="app">
+
       <nav class="navbar is-light is-fixed-top ">
         <div class="navbar-brand">
           <h1 class="navbar-h1">Yikegaya's Portfolio</h1>
+          <div class="navbar-burger burger" data-target="navbar-links" @click="isNavbarOpen = !isNavbarOpen" v-bind:class="{'is-active': isNavbarOpen}">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
         <div class="navbar-end">
-          <div id="navbar-links" class="navbar-menu">
+          <div id="navbar-links" class="navbar-menu" v-bind:class="{'is-active': isNavbarOpen}">
             <a class="navbar-item" href="#about">
               <span class="icon">
                 <i class="fas fa-bars"></i>
@@ -48,7 +54,6 @@
             </a>
           </div>
         </div>
-
       </nav>
     
       <section class="section section-heading" id="about">
@@ -225,7 +230,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Ruby on Rails:</strong>
+                      <strong>Ruby on Rails</strong>
                       <br>
                       <progress class="progress is-primary" value="90" max="100"></progress>
                     </p>
@@ -237,7 +242,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>React.js:</strong>
+                      <strong>React.js</strong>
                       <br>
                       <progress class="progress is-primary" value="80" max="100"></progress>
                     </p>
@@ -249,7 +254,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>AWS:</strong>
+                      <strong>AWS</strong>
                       <br>
                       <progress class="progress is-primary" value="65" max="100"></progress>
                     </p>
