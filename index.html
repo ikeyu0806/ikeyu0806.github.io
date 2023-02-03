@@ -56,21 +56,18 @@
         </div>
       </nav>
     
-      <section class="section section-heading" id="about">
-        <div class="text-white">
-          <div class="container">
-            <div class="text-center">
-              <h3 class="section1-title">About Me</h3>
-              <h4 class="section1-subtitle">Yuki Ikegaya</h4>
-              </br>
-              <p>フリーランスのソフトウェアエンジニアです。</p></br>
-              <p>仕事では主にRuby on Rails、React、AWS、Terraformを使ってWebアプリケーションを開発しています。</p>
-              </br>
-              <p>個人開発ではVue、Golang、Python、Unityも使用します。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="cover_img_parent">
+        <img
+          class="cover_img"
+          src='img/top_cover.png'
+          alt='Top Cover' />
+        <p class="headline_service_name">
+          Yuki Ikegaya
+        </p>
+        <p class="cover_description">
+          フリーランスのソフトウェアエンジニアです。
+        </p>
+      </div>
 
       <section class="section" id="links">
           <div class="container">
@@ -498,45 +495,123 @@
     font-size: 30px;
     margin-bottom: 5px;
   }
- .section-heading {
-   margin-top: 20px;
-   background-color:gray;
- }
- .text-center {
-   text-align: center;
- }
- .portfolio-description {
-   margin-top: 10px;
- }
- .text-white {
-   color: white;
- }
- .top-header {
-   margin-top: 15px;
- }
- .separation {
-   margin-top: 20px;
- }
- .section-header {
-   margin-top: 50px;
- }
- .qualification-description {
-   margin-bottom: 20px;
-   text-align: center;
- }
- .work-description {
-   margin: 10px 0px;
- }
- .work-image {
-   margin-top: 10px;
- }
- .is-link {
-   margin: 5px;
- }
+  .section-heading {
+    margin-top: 20px;
+    background-color:gray;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .portfolio-description {
+    margin-top: 10px;
+  }
+  .text-white {
+    color: white;
+  }
+  .top-header {
+    margin-top: 15px;
+  }
+  .separation {
+    margin-top: 20px;
+  }
+  .section-header {
+    margin-top: 50px;
+  }
+  .qualification-description {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .work-description {
+    margin: 10px 0px;
+  }
+  .work-image {
+    margin-top: 10px;
+  }
+  .is-link {
+    margin: 5px;
+  }
+  .headline_service_name {
+    font-size: 80px;
+  }
 
-@media screen and (max-width: 1024px) {
-  .margin-15 {
-    margin: 15px;
+  .cover_description {
+    font-size: 200%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .cover_img {
+    max-width: 100%;
+    filter: hue-rotate(180deg);
+    filter: invert(10%);
+    /* filter: sepia(70%); */
+    filter: brightness(30%);
+  }
+
+  .cover_img_parent {
+    position: relative;
+  }
+
+  .cover_img_parent .headline_service_name {
+    position: absolute;
+    color: #ffffff;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    left: 50%;
+    background-clip: text;
+  }
+
+  .cover_img_parent .cover_description {
+    position: absolute;
+    color: #ffffff;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    top: 60%;
+    left: 50%;
+    background-clip: text;
+  }
+
+/* タブレット用 */
+@media screen and (min-width : 719px) and (max-width : 1200px) {
+  .cover_img_parent .headline_service_name {
+    top: 50%;
+    left: 50%;
+		font-size: 75px;
+	}
+
+  .cover_img_parent .cover_description {
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width: 479px) {
+	/* スマホ用 */
+  .cover_img_parent .headline_service_name {
+    top: 50%;
+    left: 50%;
+		font-size: 28px;
+	}
+
+  .cover_img_parent .cover_description {
+    top: 70%;
+    left: 50%;
+    font-size: 15px;
+  }
+
+  .company_overview_text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .mission_text {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
 }
 
