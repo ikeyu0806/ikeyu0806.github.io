@@ -1,3 +1,11 @@
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
 .navbar-h1 {
   margin: 10px;
 }
@@ -99,6 +107,14 @@
   top: 60%;
   left: 50%;
   background-clip: text;
+}
+
+.service_description {
+  font-size: 20px;
+}
+
+.service_img {
+  border: 1px solid;
 }
 
 /* タブレット用 */
