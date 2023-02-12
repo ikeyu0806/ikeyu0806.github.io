@@ -146,13 +146,13 @@
   .cover_img_parent .headline_service_name {
     top: 30%;
     left: 50%;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .cover_img_parent .cover_description {
-    top: 75%;
+    top: 70%;
     left: 50%;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .company_overview_text {
