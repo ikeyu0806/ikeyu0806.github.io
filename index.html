@@ -17,10 +17,11 @@
     <div class="container mx-auto flex justify-between items-center px-4">
       <h1 class="md:text-3xl font-bold">Yuki Ikegaya</h1>
       <nav>
-        <ul class="flex space-x-6">
+        <ul class="flex space-x-6 invisible md:visible">
           <li><a href="#about" class="hover:text-blue-400">About me</a></li>
-          <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
           <li><a href="#projects" class="hover:text-blue-400">Work history</a></li>
+          <li><a href="#private_works" class="hover:text-blue-400">Private Works</a></li>
+          <li><a href="#links" class="hover:text-blue-400">Private Works</a></li>
           <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
         </ul>
       </nav>
@@ -51,7 +52,7 @@
   </section>
 
   <!-- Work History -->
-  <section id="projects" class="py-20 bg-gray-700">
+  <section id="projects" class="py-20 bg-gray-800">
     <div class="container mx-auto text-center px-4">
       <h2 class="text-3xl font-semibold mb-6">Work history</h2>
       <!-- Work history list -->
@@ -117,6 +118,12 @@
             </span>
             <span class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm">
               React
+            </span>
+            <span class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              AWS ECS
+            </span>
+            <span class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              Terraform
             </span>
           </div>
           <div class="mt-6">
@@ -198,11 +205,110 @@
     </div>
   </section>
 
-    <!-- contact -->
-    <section id="contact" class="py-20 bg-gray-800 section-hidden">
+  <section id="private_works" class="py-20 bg-gray-700">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl font-semibold text-white mb-6 md:mb-12">Private Works</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- SquareEight -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <header class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">SquareEight</h3>
+          </header>
+          <div class="mb-4">
+            <p class="text-gray-600 text-sm">
+              ノーコードWebページ作成サービス
+            </p>
+            <img src="img/square_eight_demo.png" alt="chat app screenshot" class="w-full h-auto mt-4 rounded-md">
+          </div>
+          <footer class="flex justify-center mt-4">
+            <a href="https://github.com/ikeyu0806/SquareEight" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Source Code
+            </a>
+          </footer>
+        </div>
+  
+        <!-- Vue.js カレンダーサービス -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <header class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Vue.js(Nuxt)で作成した自作カレンダーサービス</h3>
+          </header>
+          <div class="mb-4">
+            <img src="img/vue_calendar.png" alt="calendar app screenshot" class="w-full h-auto mt-4 rounded-md">
+          </div>
+          <footer class="flex justify-between mt-4">
+            <a href="https://vue-calendar-plum.vercel.app/" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Preview
+            </a>
+            <a href="https://github.com/ikeyu0806/vue-calendar" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Source Code
+            </a>
+          </footer>
+        </div>
+  
+        <!-- 自作ブログサービス -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <header class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">自作ブログサービス</h3>
+          </header>
+          <div class="mb-4">
+            <p class="text-gray-600 text-sm">NuxtとPython FastAPIで作成したブログサービス</p>
+            <img src="img/blog_app.png" alt="blog app screenshot" class="w-full h-auto mt-4 rounded-md">
+          </div>
+          <footer class="flex justify-between mt-4">
+            <a href="https://blog-app-frontend-red.vercel.app/" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Preview
+            </a>
+            <a href="https://github.com/ikeyu0806/blog-app-frontend" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Source Code
+            </a>
+          </footer>
+        </div>
+  
+        <!-- Unity 3Dアクションゲーム -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <header class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Unityで開発した3Dアクションゲーム</h3>
+          </header>
+          <div class="mb-4">
+            <img src="img/UnityChanSnowBallFight.png" alt="pocket organize screenshot" class="w-full h-auto mt-4 rounded-md">
+          </div>
+          <footer class="flex justify-between mt-4">
+            <a href="https://play.unity.com/mg/other/unitychansnowballfight" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Preview
+            </a>
+            <a href="https://github.com/ikeyu0806/UnityChanSnowBallFight" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Source Code
+            </a>
+          </footer>
+        </div>
+  
+        <!-- Pocket整理サービス -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <header class="mb-4">
+            <h3 class="text-xl font-semibold text-gray-800">Pocketにクリップした記事を整理するサービス</h3>
+          </header>
+          <div class="mb-4">
+            <img src="img/pocket_organize.png" alt="pocket organize screenshot" class="w-full h-auto mt-4 rounded-md">
+          </div>
+          <footer class="flex justify-between mt-4">
+            <a href="https://damp-earth-91663.herokuapp.com/" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Preview
+            </a>
+            <a href="https://github.com/ikeyu0806/pocket-organize-app" target="_blank" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
+              Source Code
+            </a>
+          </footer>
+        </div>
+  
+      </div>
+    </div>
+  </section>  
+
+    <!-- link -->
+    <section id="links" class="py-20 bg-gray-800 section-hidden">
       <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6">Links</h2>
-        <div class="grid grid-cols-3 gap-4">
+        <h2 class="text-3xl font-semibold mb-6 md:mb-12">Links</h2>
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-4">
           <div class="col-span-1">
             <a href="https://github.com/ikeyu0806" class="bg-cyan-800 text-white py-2 px-6 rounded-full">
               Github
