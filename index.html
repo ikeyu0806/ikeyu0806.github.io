@@ -15,7 +15,7 @@
   
   <header class="py-6">
     <div class="container mx-auto flex justify-between items-center px-4">
-      <h1 class="text-3xl font-bold">Yuki Ikegaya</h1>
+      <h1 class="md:text-3xl font-bold">Yuki Ikegaya</h1>
       <nav>
         <ul class="flex space-x-6">
           <li><a href="#about" class="hover:text-blue-400">About me</a></li>
@@ -28,14 +28,14 @@
   </header>
 
   <!--  Top -->
-  <section id="hero" class="text-center py-32 bg-gray-800">
+  <section id="hero" class="text-center py-56 lg:py-64 bg-gray-800">
     <div class="container mx-auto px-4">
       <h2 id="typingText" class="text-4xl font-semibold mb-4 text-white"></h2>
     </div>
   </section>
 
   <!-- About me -->
-  <section id="about" class="py-20 bg-gray-700">
+  <section id="about" class="py-20 bg-gray-700 section-hidden">
     <div class="container mx-auto text-center px-4">
       <h2 class="text-3xl font-semibold mb-6">About me</h2>
       <p class="text-lg">
@@ -51,7 +51,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-20 bg-gray-800">
+  <section id="skills" class="py-20 bg-gray-800 section-hidden">
     <div class="container mx-auto text-center px-4">
       <h2 class="text-3xl font-semibold mb-6">Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -175,7 +175,7 @@
   </section>
 
   <!-- Qualification -->
-  <section id="qualification" class="py-20 bg-gray-800">
+  <section id="qualification" class="py-20 bg-gray-800 section-hidden">
     <h3 class="text-3xl font-semibold text-center text-white mb-6">Qualification</h3>
     <p class="text-lg text-center text-gray-400 mb-8">以下の資格を取得・保持しています。</p>
     
@@ -224,7 +224,7 @@
   </section>
 
   <!-- contact -->
-  <section id="contact" class="py-20 bg-gray-700">
+  <section id="contact" class="py-20 bg-gray-700 section-hidden">
     <div class="container mx-auto text-center px-4">
       <h2 class="text-3xl font-semibold mb-6">Contact</h2>
       <p class="text-lg mb-4">お気軽にご連絡ください！</p>
@@ -239,6 +239,20 @@
 
 </body>
 </html>
+
+<style>
+  /* 各セクションを非表示からアニメーションで表示 */
+  .section-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
 
 <script>
   // タイピング効果を与えるテキスト
@@ -256,4 +270,28 @@
 
   // ページが読み込まれたら開始
   window.onload = typeWriter;
+</script>
+
+<script>
+  // Intersection Observerを設定
+  const sections = document.querySelectorAll('.section-hidden');
+
+  const observerOptions = {
+    threshold: 0.5 // 50%以上がビューポートに入った時に発火
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // セクションがビューポートに入ったら表示
+        entry.target.classList.add('section-visible');
+        observer.unobserve(entry.target); // 一度表示されたら監視を解除
+      }
+    });
+  }, observerOptions);
+
+  // 各セクションに対してObserverを適用
+  sections.forEach(section => {
+    observer.observe(section);
+  });
 </script>
