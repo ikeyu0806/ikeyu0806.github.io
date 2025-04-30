@@ -7,39 +7,52 @@
   <title>ポートフォリオ - Yuki Ikegaya</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#3A3A3A',
+            teal: '#009688',
+            mustard: '#FFC107',
+          }
+        }
+      }
+    }
+  </script>
   
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg-gray-50 text-gray-800 font-roboto">
+<body class="bg-white text-charcoal font-roboto">
   
-  <header class="py-6 bg-white shadow-sm">
+  <header class="py-6 bg-white border-b border-gray-100">
     <div class="container mx-auto flex justify-between items-center px-4">
       <!-- <h1 class="md:text-3xl font-bold">Yuki Ikegaya</h1> -->
       <nav>
         <ul class="flex space-x-6">
-          <li><a href="#about" class="text-gray-700 hover:text-blue-800 transition-colors">About me</a></li>
-          <li><a href="#projects" class="text-gray-700 hover:text-blue-800 transition-colors">Business history</a></li>
-          <li><a href="#private_works" class="text-gray-700 hover:text-blue-800 transition-colors">Private Works</a></li>
-          <li><a href="#links" class="text-gray-700 hover:text-blue-800 transition-colors">Links</a></li>
-          <li><a href="#contact" class="text-gray-700 hover:text-blue-800 transition-colors">Contact</a></li>
+          <li><a href="#about" class="text-charcoal hover:text-teal transition-colors">About me</a></li>
+          <li><a href="#projects" class="text-charcoal hover:text-teal transition-colors">Business history</a></li>
+          <li><a href="#private_works" class="text-charcoal hover:text-teal transition-colors">Private Works</a></li>
+          <li><a href="#links" class="text-charcoal hover:text-teal transition-colors">Links</a></li>
+          <li><a href="#contact" class="text-charcoal hover:text-teal transition-colors">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!--  Top -->
-  <section id="hero" class="text-center py-56 lg:py-64 bg-gradient-to-b from-blue-50 to-gray-50">
+  <section id="hero" class="text-center py-56 lg:py-64 bg-gradient-to-b from-teal/5 to-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-6xl font-bold mb-4 text-gray-900">Yuki Ikegaya's Works</h2>
+      <h2 class="text-6xl font-bold mb-4 text-charcoal">Yuki Ikegaya's Works</h2>
     </div>
   </section>
 
   <!-- About me -->
   <section id="about" class="py-20 bg-white section-hidden">
     <div class="container mx-auto text-center px-4">
-      <h2 class="text-3xl font-semibold mb-6 text-gray-900">About me</h2>
-      <p class="text-lg text-gray-700">
+      <h2 class="text-3xl font-semibold mb-6 text-charcoal">About me</h2>
+      <p class="text-lg text-charcoal/80">
         <div>Webサービスとデータ基盤の開発が得意なソフトウェアエンジニア。システム設計から実装まで幅広く対応可能です。</div>
         <div class="mt-3">
           現在はUUUM株式会社でSaasの新規開発を担当しています。
@@ -51,7 +64,7 @@
   <!-- Work History -->
   <section id="projects" class="py-20 bg-gray-50">
     <div class="container mx-auto text-center px-4">
-      <h2 class="text-3xl font-semibold mb-6 text-gray-900 section-hidden">Business history</h2>
+      <h2 class="text-3xl font-semibold mb-6 text-charcoal section-hidden">Business history</h2>
       <!-- Work history list -->
       <div class="space-y-8">
         <div class="bg-white p-6 rounded-lg section-hidden">
@@ -93,7 +106,7 @@
           </div>
           <p>
             <div class="mt-6">
-              <a href="https://cloud.vket.com/" class="bg-blue-700 text-white py-2 px-6 rounded-full">Details</a>
+              <a href="https://cloud.vket.com/" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">Details</a>
             </div>
           </p>
         </div>
@@ -118,7 +131,7 @@
             </nobr>
           </div>
           <div class="mt-6">
-            <a href="https://www.goodcycle.net/service-list/videocall/" class="bg-blue-700 text-white py-2 px-6 rounded-full">Details</a>
+            <a href="https://www.goodcycle.net/service-list/videocall/" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">Details</a>
           </div>
         </div>
       </div>
@@ -141,7 +154,7 @@
             </nobr>
           </div>
           <div class="mt-6">
-            <a href="https://play.jp/products/" class="bg-blue-700 text-white py-2 px-6 rounded-full">Details</a>
+            <a href="https://play.jp/products/" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">Details</a>
           </div>
         </div>
 
@@ -159,7 +172,7 @@
             </nobr>
           </div>
           <div class="mt-6">
-            <a href="https://stores.fun/reserve" class="bg-blue-700 text-white py-2 px-6 rounded-full">Details</a>
+            <a href="https://stores.fun/reserve" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">Details</a>
           </div>
         </div>
 
@@ -174,7 +187,7 @@
             </nobr>
           </div>
           <div class="mt-6">
-            <a href="https://www.naviplus.co.jp/recommend.html" class="bg-blue-700 text-white py-2 px-6 rounded-full">Details</a>
+            <a href="https://www.naviplus.co.jp/recommend.html" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">Details</a>
           </div>
         </div>
 
@@ -195,15 +208,15 @@
 
   <section id="private_works" class="py-20 bg-white">
     <div class="container mx-auto text-center px-4">
-      <h2 class="text-3xl font-semibold text-gray-900 mb-6 md:mb-12 section-hidden">Private Works</h2>
+      <h2 class="text-3xl font-semibold text-charcoal mb-6 md:mb-12 section-hidden">Private Works</h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- SquareEight -->
         <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
           <header class="mb-4">
-            <h3 class="text-xl font-semibold text-gray-800">SquareEight</h3>
+            <h3 class="text-xl font-semibold text-charcoal">SquareEight</h3>
           </header>
           <div class="mb-4">
-            <p class="text-gray-600 text-sm">
+            <p class="text-charcoal/70 text-sm">
               ノーコードWebページ作成サービス
             </p>
             <div class="my-4 grid-cols-3 md:grid-cols-5">
@@ -223,7 +236,7 @@
             <img src="img/square_eight_demo2.png" alt="chat app screenshot" class="w-full h-auto mt-4 rounded-md">
           </div>
           <footer class="flex justify-center mt-4">
-            <a href="https://github.com/ikeyu0806/SquareEight" target="_blank" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806/SquareEight" target="_blank" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Source Code
             </a>
           </footer>
@@ -232,7 +245,7 @@
         <!-- Vue.js カレンダーサービス -->
         <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
           <header class="mb-4 grid-cols-3 md:grid-cols-5">
-            <h3 class="text-xl font-semibold text-gray-800">Vue.js(Nuxt)で作成した自作カレンダーサービス</h3>
+            <h3 class="text-xl font-semibold text-charcoal">Vue.js(Nuxt)で作成した自作カレンダーサービス</h3>
           </header>
           <div class="my-4">
             <nobr class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
@@ -246,7 +259,7 @@
             <img src="img/vue_calendar.png" alt="calendar app screenshot" class="w-full h-auto mt-4 rounded-md">
           </div>
           <footer class="flex justify-center mt-4">
-            <a href="https://github.com/ikeyu0806/vue-calendar" target="_blank" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806/vue-calendar" target="_blank" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Source Code
             </a>
           </footer>
@@ -255,7 +268,7 @@
         <!-- 自作ブログサービス -->
         <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
           <header class="mb-4 grid-cols-3 md:grid-cols-5">
-            <h3 class="text-xl font-semibold text-gray-800">自作ブログサービス</h3>
+            <h3 class="text-xl font-semibold text-charcoal">自作ブログサービス</h3>
           </header>
           <div class="my-4">
             <nobr class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
@@ -266,11 +279,11 @@
             </nobr>
           </div>
           <div class="mb-4">
-            <p class="text-gray-600 text-sm">NuxtとPython FastAPIで作成したブログサービス</p>
+            <p class="text-charcoal/70 text-sm">NuxtとPython FastAPIで作成したブログサービス</p>
             <img src="img/blog_app.png" alt="blog app screenshot" class="w-full h-auto mt-4 rounded-md">
           </div>
           <footer class="flex justify-center mt-4">
-            <a href="https://github.com/ikeyu0806/blog-app-frontend" target="_blank" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806/blog-app-frontend" target="_blank" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Source Code
             </a>
           </footer>
@@ -279,7 +292,7 @@
         <!-- Unity 3Dアクションゲーム -->
         <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
           <header class="mb-4 grid-cols-3 md:grid-cols-5">
-            <h3 class="text-xl font-semibold text-gray-800">Unityで開発した3Dアクションゲーム</h3>
+            <h3 class="text-xl font-semibold text-charcoal">Unityで開発した3Dアクションゲーム</h3>
           </header>
           <div class="my-4">
             <nobr class="bg-gray-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
@@ -290,7 +303,7 @@
             <img src="img/UnityChanSnowBallFight.png" alt="pocket organize screenshot" class="w-full h-auto mt-4 rounded-md">
           </div>
           <footer class="flex justify-center mt-4">
-            <a href="https://github.com/ikeyu0806/UnityChanSnowBallFight" target="_blank" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806/UnityChanSnowBallFight" target="_blank" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Source Code
             </a>
           </footer>
@@ -299,7 +312,7 @@
         <!-- Pocket整理サービス -->
         <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
           <header class="mb-4 grid-cols-3 md:grid-cols-5">
-            <h3 class="text-xl font-semibold text-gray-800">Pocketにクリップした記事を整理するサービス</h3>
+            <h3 class="text-xl font-semibold text-charcoal">Pocketにクリップした記事を整理するサービス</h3>
           </header>
           <div class="my-4">
             <nobr class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm">
@@ -313,7 +326,7 @@
             <img src="img/pocket_organize.png" alt="pocket organize screenshot" class="w-full h-auto mt-4 rounded-md">
           </div>
           <footer class="flex justify-center mt-4">
-            <a href="https://github.com/ikeyu0806/pocket-organize-app" target="_blank" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806/pocket-organize-app" target="_blank" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Source Code
             </a>
           </footer>
@@ -326,31 +339,31 @@
     <!-- link -->
     <section id="links" class="py-20 bg-gray-50 section-hidden">
       <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6 md:mb-9 text-gray-900">Links</h2>
+        <h2 class="text-3xl font-semibold mb-6 md:mb-9 text-charcoal">Links</h2>
         <div class="grid grid-cols-3 md:grid-cols-9 gap-4">
           <div class="col-span-2 my-2 hidden md:inline-block"></div>
           <div class="col-span-1 my-2">
-            <a href="https://github.com/ikeyu0806" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://github.com/ikeyu0806" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Github
             </a>
           </div>
           <div class="col-span-1 my-2">
-            <a href="https://ikeyu0806.hatenablog.com/" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://ikeyu0806.hatenablog.com/" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Blog
             </a>
           </div>
           <div class="col-span-1 my-2">
-            <a href="https://qiita.com/yikegaya" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://qiita.com/yikegaya" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Qiita
             </a>
           </div>
           <div class="col-span-1 my-2">
-            <a href="https://www.linkedin.com/in/%E7%A5%90%E8%B2%B4-%E6%B1%A0%E8%B0%B7-61a31661/?originalSubdomain=jp" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://www.linkedin.com/in/%E7%A5%90%E8%B2%B4-%E6%B1%A0%E8%B0%B7-61a31661/?originalSubdomain=jp" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Linkdin
             </a>
           </div>
           <div class="col-span-1 my-2">
-            <a href="https://www.wantedly.com/id/yuki_ikegaya" class="bg-blue-700 text-white py-2 px-6 rounded-full">
+            <a href="https://www.wantedly.com/id/yuki_ikegaya" class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors">
               Wantedly
             </a>
           </div>
@@ -362,13 +375,13 @@
   <!-- contact -->
   <section id="contact" class="py-20 bg-white section-hidden">
     <div class="container mx-auto text-center px-4">
-      <h2 class="text-3xl font-semibold mb-6 text-gray-900">Contact</h2>
-      <a href="mailto:ikeyu0806@gmail.com" class="bg-blue-700 text-white py-2 px-6 rounded-full mt-6 hover:bg-blue-800 transition-colors">メールで連絡</a>
+      <h2 class="text-3xl font-semibold mb-6 text-charcoal">Contact</h2>
+      <a href="mailto:ikeyu0806@gmail.com" class="bg-teal text-white py-2 px-6 rounded-full mt-6 hover:bg-teal/90 transition-colors">メールで連絡</a>
     </div>
   </section>
 
   <!-- footer -->
-  <footer class="py-6 bg-gray-800 text-center text-sm text-white">
+  <footer class="py-6 bg-charcoal text-center text-sm text-white/90">
     <p>&copy; 2025 Yuki Ikegaya. All rights reserved.</p>
   </footer>
 
