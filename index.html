@@ -31,7 +31,7 @@
   <!--  Top -->
   <section id="hero" class="text-center py-56 lg:py-64 bg-gray-800">
     <div class="container mx-auto px-4">
-      <h2 id="typingText" class="text-6xl font-bold mb-4 text-white"></h2>
+      <h2 class="text-6xl font-bold mb-4 text-white">Yuki Ikegaya's Works</h2>
     </div>
   </section>
 
@@ -388,24 +388,6 @@
     transform: translateY(0);
   }
 </style>
-
-<script>
-  // タイピング効果を与えるテキスト
-  const text = "Yuki Ikegaya's Works";
-  let i = 0;
-  
-  function typeWriter() {
-    if (i < text.length) {
-      document.getElementById("typingText").innerHTML += text.charAt(i);
-      i++;
-      // 100ms間隔で次の文字を追加
-      setTimeout(typeWriter, 100);
-    }
-  }
-
-  // ページが読み込まれたら開始
-  window.onload = typeWriter;
-</script>
 
 <script>
   // Intersection Observerを設定
