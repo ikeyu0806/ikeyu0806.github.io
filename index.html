@@ -27,317 +27,578 @@
     />
   </head>
   <body class="bg-white text-charcoal font-roboto">
-    <header class="py-6 bg-white border-b border-gray-100">
-      <div class="container mx-auto flex justify-between items-center px-4">
-        <!-- <h1 class="md:text-3xl font-bold">Yuki Ikegaya</h1> -->
-        <nav>
-          <ul class="flex space-x-6">
-            <li>
-              <a
-                href="#about"
-                class="text-charcoal hover:text-teal transition-colors"
-                >About me</a
-              >
-            </li>
-            <li>
-              <a
-                href="#projects"
-                class="text-charcoal hover:text-teal transition-colors"
-                >Business history</a
-              >
-            </li>
-            <li>
-              <a
-                href="#private_works"
-                class="text-charcoal hover:text-teal transition-colors"
-                >Private Works</a
-              >
-            </li>
-            <li>
-              <a
-                href="#links"
-                class="text-charcoal hover:text-teal transition-colors"
-                >Links</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="text-charcoal hover:text-teal transition-colors"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div
+      id="three-bg"
+      class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none"
+    ></div>
+    <div class="relative z-10">
+      <header class="py-6 bg-white border-b border-gray-100">
+        <div class="container mx-auto flex justify-between items-center px-4">
+          <!-- <h1 class="md:text-3xl font-bold">Yuki Ikegaya</h1> -->
+          <nav>
+            <ul class="flex space-x-6">
+              <li>
+                <a
+                  href="#about"
+                  class="text-charcoal hover:text-teal transition-colors"
+                  >About me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-charcoal hover:text-teal transition-colors"
+                  >Business history</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#private_works"
+                  class="text-charcoal hover:text-teal transition-colors"
+                  >Private Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#links"
+                  class="text-charcoal hover:text-teal transition-colors"
+                  >Links</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-charcoal hover:text-teal transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-    <!--  Top -->
-    <section
-      id="hero"
-      class="text-center py-56 lg:py-64 bg-gradient-to-b from-teal/5 to-white"
-    >
-      <div class="container mx-auto px-4">
-        <h2 class="text-6xl font-bold mb-4 text-charcoal">
-          Yuki Ikegaya's Works
-        </h2>
-      </div>
-    </section>
+      <!--  Top -->
+      <section
+        id="hero"
+        class="text-center py-56 lg:py-64 bg-gradient-to-b from-teal/5 to-white"
+      >
+        <div class="container mx-auto px-4">
+          <h2 class="text-6xl font-bold mb-4 text-charcoal">
+            Yuki Ikegaya's Works
+          </h2>
+        </div>
+      </section>
 
-    <!-- About me -->
-    <section id="about" class="py-20 bg-white section-hidden">
-      <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6 text-charcoal">About me</h2>
-        <div class="text-lg text-charcoal/80">
-          <div>
-            Webサービスとデータ基盤の開発が得意なソフトウェアエンジニア。システム設計から実装まで幅広く対応可能です。
-          </div>
-          <div class="mt-3">
-            対応可能な技術スタックはRuby on
-            Rails、React、Vue、TypeScript、Python、Go、AWS、GCP、Terraformなど。
+      <!-- About me -->
+      <section id="about" class="py-20 bg-white section-hidden">
+        <div class="container mx-auto text-center px-4">
+          <h2 class="text-3xl font-semibold mb-6 text-charcoal">About me</h2>
+          <div class="text-lg text-charcoal/80">
+            <div>
+              Webサービスとデータ基盤の開発が得意なソフトウェアエンジニア。システム設計から実装まで幅広く対応可能です。
+            </div>
+            <div class="mt-3">
+              対応可能な技術スタックはRuby on
+              Rails、React、Vue、TypeScript、Python、Go、AWS、GCP、Terraformなど。
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="py-20 bg-gray-50">
-      <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6 text-charcoal section-hidden">
-          Business history
-        </h2>
-        <div class="space-y-8">
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2025/09 ~ 現在</div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              株式会社LegalOn Technologies
-            </h3>
-            <div class="text-gray-700 mt-2">AI文書レビューサービスの開発</div>
-            <div class="my-4">
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Next.js</nobr
-              >
-              <nobr
-                class="bg-red-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Nest.js</nobr
-              >
-              <nobr
-                class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >tRPC</nobr
-              >
-              <nobr
-                class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >VertexAI</nobr
-              >
+      <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center px-4">
+          <h2 class="text-3xl font-semibold mb-6 text-charcoal section-hidden">
+            Business history
+          </h2>
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2025/09 ~ 現在</div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                株式会社LegalOn Technologies
+              </h3>
+              <div class="text-gray-700 mt-2">AI文書レビューサービスの開発</div>
+              <div class="my-4">
+                <nobr
+                  class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Next.js</nobr
+                >
+                <nobr
+                  class="bg-red-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Nest.js</nobr
+                >
+                <nobr
+                  class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >tRPC</nobr
+                >
+                <nobr
+                  class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >VertexAI</nobr
+                >
+              </div>
             </div>
-          </div>
 
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2024/04 ~ 2025/09</div>
-            <h3 class="text-xl font-semibold text-gray-800">UUUM株式会社</h3>
-            <div class="text-gray-700 mt-2">
-              インフルエンサーマーケティングWebサービス / 社内データ基盤の開発
-            </div>
-            <!--<div class="mt-1 text-sm text-gray-600 italic">
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2024/04 ~ 2025/09</div>
+              <h3 class="text-xl font-semibold text-gray-800">UUUM株式会社</h3>
+              <div class="text-gray-700 mt-2">
+                インフルエンサーマーケティングWebサービス / 社内データ基盤の開発
+              </div>
+              <!--<div class="mt-1 text-sm text-gray-600 italic">
              担当プロダクト：Influencer PORT、Severus
           </div>-->
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Ruby on Rails</nobr
-              >
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >React</nobr
-              >
-              <nobr
-                class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Python</nobr
-              >
-              <nobr
-                class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >GCP Dataflow</nobr
-              >
-              <nobr
-                class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >GCP Composer</nobr
-              >
+              <div class="my-4 grid-cols-3 md:grid-cols-5">
+                <nobr
+                  class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Ruby on Rails</nobr
+                >
+                <nobr
+                  class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >React</nobr
+                >
+                <nobr
+                  class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Python</nobr
+                >
+                <nobr
+                  class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >GCP Dataflow</nobr
+                >
+                <nobr
+                  class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >GCP Composer</nobr
+                >
+              </div>
             </div>
-          </div>
 
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2023/05 ~ 2024/03</div>
-            <h3 class="text-xl font-semibold text-gray-800">株式会社HIKKY</h3>
-            <div class="text-gray-700 mt-2">
-              VRプラットフォームのバックエンドAPI、社内管理画面開発
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2023/05 ~ 2024/03</div>
+              <h3 class="text-xl font-semibold text-gray-800">株式会社HIKKY</h3>
+              <div class="text-gray-700 mt-2">
+                VRプラットフォームのバックエンドAPI、社内管理画面開発
+              </div>
+              <div class="my-4">
+                <nobr
+                  class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Go</nobr
+                >
+                <nobr
+                  class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Vue.js</nobr
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://cloud.vket.com/"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                  >Details</a
+                >
+              </div>
             </div>
-            <div class="my-4">
-              <nobr
-                class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Go</nobr
-              >
-              <nobr
-                class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Vue.js</nobr
-              >
-            </div>
-            <div class="mt-6">
-              <a
-                href="https://cloud.vket.com/"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-                >Details</a
-              >
-            </div>
-          </div>
 
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2020/06 ~ 2022/12</div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              株式会社グッドサイクルシステム
-            </h3>
-            <div class="text-gray-700 mt-2">
-              オンライン服薬指導システム /
-              社内決済基盤システム開発（共に新規開発）
-            </div>
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Ruby on Rails</nobr
-              >
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >React</nobr
-              >
-              <nobr
-                class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >AWS ECS</nobr
-              >
-              <nobr
-                class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Terraform</nobr
-              >
-            </div>
-            <div class="mt-6">
-              <a
-                href="https://www.goodcycle.net/service-list/videocall/"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-                >Details</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mx-auto text-center px-4 mt-6">
-        <div class="space-y-8">
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2020/02 ~ 2020/05</div>
-            <h3 class="text-xl font-semibold text-gray-800">株式会社PLAY</h3>
-            <div class="text-gray-700 mt-2">動画配信CMS開発</div>
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Ruby on Rails</nobr
-              >
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >React</nobr
-              >
-            </div>
-            <div class="mt-6">
-              <a
-                href="https://play.jp/products/"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-                >Details</a
-              >
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2019/05 ~ 2020/02</div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              クービック株式会社
-            </h3>
-            <div class="text-gray-700 mt-2">SaaS型予約システム開発</div>
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Ruby on Rails</nobr
-              >
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >React</nobr
-              >
-            </div>
-            <div class="mt-6">
-              <a
-                href="https://stores.fun/reserve"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-                >Details</a
-              >
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2018/10 ~ 2019/04</div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              ナビプラス株式会社
-            </h3>
-            <div class="text-gray-700 mt-2">EC向けレコメンドシステム開発</div>
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Ruby on Rails</nobr
-              >
-            </div>
-            <div class="mt-6">
-              <a
-                href="https://www.naviplus.co.jp/recommend.html"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-                >Details</a
-              >
-            </div>
-          </div>
-
-          <div class="bg-white p-6 rounded-lg section-hidden">
-            <div class="text-sm text-gray-500 mb-1">2016/02 ~ 2018/03</div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              株式会社フュージョントラスト・システム
-            </h3>
-            <div class="text-gray-700 mt-2">金融データウェアハウス開発</div>
-            <div class="my-4 grid-cols-3 md:grid-cols-5">
-              <nobr
-                class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-                >Oracle</nobr
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="private_works" class="py-20 bg-white">
-      <div class="container mx-auto text-center px-4">
-        <h2
-          class="text-3xl font-semibold text-charcoal mb-6 md:mb-12 section-hidden"
-        >
-          Private Works
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <!-- SquareEight -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4">
-              <h3 class="text-xl font-semibold text-charcoal">SquareEight</h3>
-            </header>
-            <div class="mb-4">
-              <div class="text-charcoal/70 text-sm">
-                ノーコードWebページ作成サービス
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2020/06 ~ 2022/12</div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                株式会社グッドサイクルシステム
+              </h3>
+              <div class="text-gray-700 mt-2">
+                オンライン服薬指導システム /
+                社内決済基盤システム開発（共に新規開発）
               </div>
               <div class="my-4 grid-cols-3 md:grid-cols-5">
                 <nobr
                   class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Ruby on Rails</nobr
                 >
-                  Ruby on Rails
+                <nobr
+                  class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >React</nobr
+                >
+                <nobr
+                  class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >AWS ECS</nobr
+                >
+                <nobr
+                  class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Terraform</nobr
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://www.goodcycle.net/service-list/videocall/"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto text-center px-4 mt-6">
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2020/02 ~ 2020/05</div>
+              <h3 class="text-xl font-semibold text-gray-800">株式会社PLAY</h3>
+              <div class="text-gray-700 mt-2">動画配信CMS開発</div>
+              <div class="my-4 grid-cols-3 md:grid-cols-5">
+                <nobr
+                  class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Ruby on Rails</nobr
+                >
+                <nobr
+                  class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >React</nobr
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://play.jp/products/"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                  >Details</a
+                >
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2019/05 ~ 2020/02</div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                クービック株式会社
+              </h3>
+              <div class="text-gray-700 mt-2">SaaS型予約システム開発</div>
+              <div class="my-4 grid-cols-3 md:grid-cols-5">
+                <nobr
+                  class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Ruby on Rails</nobr
+                >
+                <nobr
+                  class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >React</nobr
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://stores.fun/reserve"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                  >Details</a
+                >
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2018/10 ~ 2019/04</div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                ナビプラス株式会社
+              </h3>
+              <div class="text-gray-700 mt-2">EC向けレコメンドシステム開発</div>
+              <div class="my-4 grid-cols-3 md:grid-cols-5">
+                <nobr
+                  class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Ruby on Rails</nobr
+                >
+              </div>
+              <div class="mt-6">
+                <a
+                  href="https://www.naviplus.co.jp/recommend.html"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                  >Details</a
+                >
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg section-hidden">
+              <div class="text-sm text-gray-500 mb-1">2016/02 ~ 2018/03</div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                株式会社フュージョントラスト・システム
+              </h3>
+              <div class="text-gray-700 mt-2">金融データウェアハウス開発</div>
+              <div class="my-4 grid-cols-3 md:grid-cols-5">
+                <nobr
+                  class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >Oracle</nobr
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="private_works" class="py-20 bg-white">
+        <div class="container mx-auto text-center px-4">
+          <h2
+            class="text-3xl font-semibold text-charcoal mb-6 md:mb-12 section-hidden"
+          >
+            Private Works
+          </h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- SquareEight -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4">
+                <h3 class="text-xl font-semibold text-charcoal">SquareEight</h3>
+              </header>
+              <div class="mb-4">
+                <div class="text-charcoal/70 text-sm">
+                  ノーコードWebページ作成サービス
+                </div>
+                <div class="my-4 grid-cols-3 md:grid-cols-5">
+                  <nobr
+                    class="bg-rose-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >
+                    Ruby on Rails
+                  </nobr>
+                  <nobr
+                    class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >
+                    React
+                  </nobr>
+                  <nobr
+                    class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >
+                    AWS ECS
+                  </nobr>
+                  <nobr
+                    class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  >
+                    Terraform
+                  </nobr>
+                </div>
+                <img
+                  src="img/square_eight_demo2.png"
+                  alt="chat app screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/SquareEight"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- Vue.js カレンダーサービス -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  Vue.js(Nuxt)で作成した自作カレンダーサービス
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Go
+                </nobr>
+                <nobr
+                  class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Vue.js
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/vue_calendar.png"
+                  alt="calendar app screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/vue-calendar"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- 自作ブログサービス -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  自作ブログサービス
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Python
+                </nobr>
+                <nobr
+                  class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Vue.js
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <div class="text-charcoal/70 text-sm">
+                  NuxtとPython FastAPIで作成したブログサービス
+                </div>
+                <img
+                  src="img/blog_app.png"
+                  alt="blog app screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/blog-app-frontend"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- Mastra製食事レコメンドAI -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  Mastraで開発した食事のレコメンドAI
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  TypeScript
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/recipe_agent.png"
+                  alt="receipe ai screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/meal-recommendation-ai"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- Unity 3Dアクションゲーム -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  Unityで開発した3Dアクションゲーム
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-gray-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Unity
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/UnityChanSnowBallFight.png"
+                  alt="pocket organize screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/UnityChanSnowBallFight"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- Pocket整理サービス -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  Pocketにクリップした記事を整理するサービス
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Go
+                </nobr>
+                <nobr
+                  class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  Vue.js
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/pocket_organize.png"
+                  alt="pocket organize screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/pocket-organize-app"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- Mastra製食事レコメンドAI -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  Mastraで開発したMCPサーバー
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  TypeScript
+                </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/mastra_mcp.png"
+                  alt="receipe ai screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/mastra-mcp"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- 目標管理サービス -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  RemixとNest.jsで開発した目標管理サービス
+                </h3>
+              </header>
+              <div class="my-4">
+                <nobr
+                  class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                >
+                  TypeScript
                 </nobr>
                 <nobr
                   class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
@@ -345,390 +606,137 @@
                   React
                 </nobr>
                 <nobr
-                  class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  class="bg-red-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
                 >
-                  AWS ECS
+                  Nest.js
                 </nobr>
+              </div>
+              <div class="mb-4">
+                <img
+                  src="img/grownote.png"
+                  alt="receipe ai screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
+              </div>
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/GrowNote"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
+            </div>
+
+            <!-- 経理管理サービス -->
+            <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
+              <header class="mb-4 grid-cols-3 md:grid-cols-5">
+                <h3 class="text-xl font-semibold text-charcoal">
+                  freee APIを使った経理チェックサービス
+                </h3>
+              </header>
+              <div class="my-4">
                 <nobr
-                  class="bg-orange-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
+                  class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
                 >
-                  Terraform
+                  T3 Stack
                 </nobr>
               </div>
-              <img
-                src="img/square_eight_demo2.png"
-                alt="chat app screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/SquareEight"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- Vue.js カレンダーサービス -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                Vue.js(Nuxt)で作成した自作カレンダーサービス
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Go
-              </nobr>
-              <nobr
-                class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Vue.js
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/vue_calendar.png"
-                alt="calendar app screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/vue-calendar"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- 自作ブログサービス -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                自作ブログサービス
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-green-700 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Python
-              </nobr>
-              <nobr
-                class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Vue.js
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <div class="text-charcoal/70 text-sm">
-                NuxtとPython FastAPIで作成したブログサービス
+              <div class="mb-4">
+                <img
+                  src="img/freee-audit-tool.png"
+                  alt="receipe ai screenshot"
+                  class="w-full h-auto mt-4 rounded-md"
+                />
               </div>
-              <img
-                src="img/blog_app.png"
-                alt="blog app screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
+              <footer class="flex justify-center mt-4">
+                <a
+                  href="https://github.com/ikeyu0806/freee-audit-tool"
+                  target="_blank"
+                  class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+                >
+                  Source Code
+                </a>
+              </footer>
             </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/blog-app-frontend"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- Mastra製食事レコメンドAI -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                Mastraで開発した食事のレコメンドAI
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                TypeScript
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/recipe_agent.png"
-                alt="receipe ai screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/meal-recommendation-ai"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- Unity 3Dアクションゲーム -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                Unityで開発した3Dアクションゲーム
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-gray-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Unity
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/UnityChanSnowBallFight.png"
-                alt="pocket organize screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/UnityChanSnowBallFight"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- Pocket整理サービス -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                Pocketにクリップした記事を整理するサービス
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-lime-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Go
-              </nobr>
-              <nobr
-                class="bg-emerald-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Vue.js
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/pocket_organize.png"
-                alt="pocket organize screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/pocket-organize-app"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- Mastra製食事レコメンドAI -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                Mastraで開発したMCPサーバー
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                TypeScript
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/mastra_mcp.png"
-                alt="receipe ai screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/mastra-mcp"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- 目標管理サービス -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                RemixとNest.jsで開発した目標管理サービス
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                TypeScript
-              </nobr>
-              <nobr
-                class="bg-yellow-400 text-xs text-black font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                React
-              </nobr>
-              <nobr
-                class="bg-red-500 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                Nest.js
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/grownote.png"
-                alt="receipe ai screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/GrowNote"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
-          </div>
-
-          <!-- 経理管理サービス -->
-          <div class="bg-white p-6 rounded-lg shadow-md section-hidden">
-            <header class="mb-4 grid-cols-3 md:grid-cols-5">
-              <h3 class="text-xl font-semibold text-charcoal">
-                freee APIを使った経理チェックサービス
-              </h3>
-            </header>
-            <div class="my-4">
-              <nobr
-                class="bg-blue-600 text-xs text-white font-medium me-2 px-2.5 py-0.5 rounded-sm"
-              >
-                T3 Stack
-              </nobr>
-            </div>
-            <div class="mb-4">
-              <img
-                src="img/freee-audit-tool.png"
-                alt="receipe ai screenshot"
-                class="w-full h-auto mt-4 rounded-md"
-              />
-            </div>
-            <footer class="flex justify-center mt-4">
-              <a
-                href="https://github.com/ikeyu0806/freee-audit-tool"
-                target="_blank"
-                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-              >
-                Source Code
-              </a>
-            </footer>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- link -->
-    <section id="links" class="py-20 bg-gray-50 section-hidden">
-      <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6 md:mb-9 text-charcoal">Links</h2>
-        <div class="grid grid-cols-3 md:grid-cols-9 gap-4">
-          <div class="col-span-2 my-2 hidden md:inline-block"></div>
-          <div class="col-span-1 my-2">
-            <a
-              href="https://github.com/ikeyu0806"
-              class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-            >
-              Github
-            </a>
+      <!-- link -->
+      <section id="links" class="py-20 bg-gray-50 section-hidden">
+        <div class="container mx-auto text-center px-4">
+          <h2 class="text-3xl font-semibold mb-6 md:mb-9 text-charcoal">
+            Links
+          </h2>
+          <div class="grid grid-cols-3 md:grid-cols-9 gap-4">
+            <div class="col-span-2 my-2 hidden md:inline-block"></div>
+            <div class="col-span-1 my-2">
+              <a
+                href="https://github.com/ikeyu0806"
+                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+              >
+                Github
+              </a>
+            </div>
+            <div class="col-span-1 my-2">
+              <a
+                href="https://ikeyu0806.hatenablog.com/"
+                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+              >
+                Blog
+              </a>
+            </div>
+            <div class="col-span-1 my-2">
+              <a
+                href="https://qiita.com/yikegaya"
+                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+              >
+                Qiita
+              </a>
+            </div>
+            <div class="col-span-1 my-2">
+              <a
+                href="https://www.linkedin.com/in/%E7%A5%90%E8%B2%B4-%E6%B1%A0%E8%B0%B7-61a31661/?originalSubdomain=jp"
+                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+              >
+                Linkdin
+              </a>
+            </div>
+            <div class="col-span-1 my-2">
+              <a
+                href="https://www.wantedly.com/id/yuki_ikegaya"
+                class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
+              >
+                Wantedly
+              </a>
+            </div>
+            <div class="col-span-2 my-2 hidden md:inline-block"></div>
           </div>
-          <div class="col-span-1 my-2">
-            <a
-              href="https://ikeyu0806.hatenablog.com/"
-              class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-            >
-              Blog
-            </a>
-          </div>
-          <div class="col-span-1 my-2">
-            <a
-              href="https://qiita.com/yikegaya"
-              class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-            >
-              Qiita
-            </a>
-          </div>
-          <div class="col-span-1 my-2">
-            <a
-              href="https://www.linkedin.com/in/%E7%A5%90%E8%B2%B4-%E6%B1%A0%E8%B0%B7-61a31661/?originalSubdomain=jp"
-              class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-            >
-              Linkdin
-            </a>
-          </div>
-          <div class="col-span-1 my-2">
-            <a
-              href="https://www.wantedly.com/id/yuki_ikegaya"
-              class="bg-teal text-white py-2 px-6 rounded-full hover:bg-teal/90 transition-colors"
-            >
-              Wantedly
-            </a>
-          </div>
-          <div class="col-span-2 my-2 hidden md:inline-block"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- contact -->
-    <section id="contact" class="py-20 bg-white section-hidden">
-      <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl font-semibold mb-6 text-charcoal">Contact</h2>
-        <a
-          href="mailto:ikeyu0806@gmail.com"
-          class="bg-teal text-white py-2 px-6 rounded-full mt-6 hover:bg-teal/90 transition-colors"
-          >メールで連絡</a
-        >
-      </div>
-    </section>
+      <!-- contact -->
+      <section id="contact" class="py-20 bg-white section-hidden">
+        <div class="container mx-auto text-center px-4">
+          <h2 class="text-3xl font-semibold mb-6 text-charcoal">Contact</h2>
+          <a
+            href="mailto:ikeyu0806@gmail.com"
+            class="bg-teal text-white py-2 px-6 rounded-full mt-6 hover:bg-teal/90 transition-colors"
+            >メールで連絡</a
+          >
+        </div>
+      </section>
 
-    <!-- footer -->
-    <footer class="py-6 bg-charcoal text-center text-sm text-white/90">
-      <div>
-        &copy; <span id="current-year"></span> Yuki Ikegaya. All rights
-        reserved.
-      </div>
-    </footer>
+      <!-- footer -->
+      <footer class="py-6 bg-charcoal text-center text-sm text-white/90">
+        <div>
+          &copy; <span id="current-year"></span> Yuki Ikegaya. All rights
+          reserved.
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
 
@@ -775,4 +783,78 @@
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
+</script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+</script>
+
+<script type="module">
+  import * as THREE from "three";
+
+  const container = document.getElementById("three-bg");
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000,
+  );
+
+  // alpha: true で背後のHTML背景（白）を透過させる
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  container.appendChild(renderer.domElement);
+
+  // --- 粒子生成 (丸いテクスチャ) ---
+  const canvas = document.createElement("canvas");
+  canvas.width = 32;
+  canvas.height = 32;
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "white";
+  ctx.beginPath();
+  ctx.arc(16, 16, 16, 0, Math.PI * 2);
+  ctx.fill();
+  const texture = new THREE.CanvasTexture(canvas);
+
+  const particlesGeometry = new THREE.BufferGeometry();
+  const count = 1000; // 白背景なので密度は控えめ
+  const positions = new Float32Array(count * 3);
+  for (let i = 0; i < count * 3; i++) positions[i] = (Math.random() - 0.5) * 15;
+  particlesGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(positions, 3),
+  );
+
+  const particlesMaterial = new THREE.PointsMaterial({
+    size: 0.15,
+    color: 0x009688, // サイトのTeal
+    transparent: true,
+    opacity: 0.3,
+    map: texture,
+    depthWrite: false,
+  });
+
+  const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+  scene.add(particles);
+  camera.position.z = 5;
+
+  // アニメーションループ
+  function animate() {
+    requestAnimationFrame(animate);
+    particles.rotation.y += 0.001; // ゆっくり回転
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  // リサイズ対応
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
 </script>
