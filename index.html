@@ -1318,8 +1318,10 @@
   // Intersection Observerを設定
   const sections = document.querySelectorAll(".section-hidden");
 
+  // 画面より高いセクションは、見えている割合がしきい値（例: 0.15）に届かない。
+  // スマホの Private Works がこの状態になり、透明のまま表示されなかった。
   const observerOptions = {
-    threshold: 0.15, // モバイル環境などでも確実に発火しやすいように調整
+    threshold: 0,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
